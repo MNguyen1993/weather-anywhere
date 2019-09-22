@@ -4,7 +4,8 @@ const express = require('express'),
 	app = express(),
 	hbs = require('hbs'),
 	geocode = require('./utils/geocode'),
-	forecast = require('./utils/forecast');
+	forecast = require('./utils/forecast'),
+	port = process.env.PORT || 3000;
 
 // Define paths for Express Configuration
 const viewsPath = path.join(__dirname, '../templates/views');
@@ -94,7 +95,7 @@ app.get('*', (req, res) => {
 	});
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
 	console.log('Server is online!');
 });
 
