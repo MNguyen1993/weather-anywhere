@@ -25,7 +25,7 @@ const forecast = (lat, long, callback) => {
 					body.currently.temperature +
 					'° out. Expect a temperature high of ' +
 					body.daily.data[0].temperatureHigh +
-					'° today and a low of ' +
+					'° and a low of ' +
 					body.daily.data[0].temperatureLow +
 					'°. There is a ' +
 					body.currently.precipProbability +
