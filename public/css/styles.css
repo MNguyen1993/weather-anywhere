@@ -47,7 +47,7 @@ header a {
 }
 
 .portrait {
-	width: 250px;
+	width: 300px;
 }
 
 .main-content {
@@ -61,4 +61,8 @@ header a {
 
 #forecast {
 	font-style: italic;
+}
+
+#info {
+	max-width: 300px;
 }

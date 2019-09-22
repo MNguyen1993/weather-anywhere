@@ -22,7 +22,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 // Routes
 app.get('/', (req, res) => {
 	res.render('index', {
-		title: 'Weather App',
+		title: 'Weather Anywhere',
 		name: 'Minh Nguyen'
 	});
 });
