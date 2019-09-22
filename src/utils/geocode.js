@@ -4,7 +4,7 @@ const geocode = (address, callback) => {
 	const url =
 		'https://api.mapbox.com/geocoding/v5/mapbox.places/' +
 		encodeURIComponent(address) +
-		'.json?access_token=pk.eyJ1IjoibW5ndXllbjE5OTMiLCJhIjoiY2swcmdyOHI0MDEyODNucDl3Nm9yNjhsaCJ9.CIevfhfD_Bw4DGfGjW2fNw&limit=1';
+		'.json?access_token=pk.eyJ1IjoibW5ndXllbjE5OTMiLCJhIjoiY2swcmdyOHI0MDEyODNucDl3Nm9yNjhsaCJ9.CIevfhfD_Bw4DGfGjW2fNw&limit=1&language=en';
 
 	// err is a low level error	with regards to OS
 	// so we check the req.body sent from the API for an error
