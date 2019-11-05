@@ -30,9 +30,36 @@ input {
 button {
 	cursor: pointer;
 	border: 1px solid #888888;
-	background: #888888;
+	background: #2ecc71;
 	color: white;
 	padding: 8px;
+	transform: perspective(1px) translateZ(0);
+	transition-property: color;
+	transition-duration: 1s;
+}
+
+button:hover {
+	box-shadow: 0 0 5px #27ae60;
+	color: black;
+	transition: all 0.3s ease-out;
+}
+
+button::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #888888;
+	transform: scale(1);
+	transition-property: transform;
+	transition: 0.3s ease-out;
+}
+
+button:hover::before {
+	transform: scale(0);
 }
 
 header h1 {
